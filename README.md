@@ -11,3 +11,6 @@ In other words, you can make AR your own or you can use one of the many pre-buil
 - Sortability/by what criteria it is sorted
 - Difficulty of task/s
 - Importance of task/s
+- Longevity tasks ( filter replacement, last time changed pee pads, etc )
+- Task progress tracking
+- Constantly moving timeline to pin things to
