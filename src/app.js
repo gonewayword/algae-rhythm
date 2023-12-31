@@ -1,5 +1,6 @@
 $(document).ready(() => {
     
+    // TODO: move to own class file
     class App {
         logger = new Logger();
         timeline = new Timeline();
@@ -97,6 +98,7 @@ $(document).ready(() => {
         }
 
         saveAllLists() {
+            // TODO: should loop through all main lists and eventually all custom lists grabbed from user
             this.saveList('master-list');
             this.saveList('life-list');
         }
