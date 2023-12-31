@@ -1,9 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./style/app.css">
+        <link rel="stylesheet" href="./style/layout-classes.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow">
+        <!-- <link href="src/scripts.html" rel="import" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+
+        <script src="src/utils/lodash.js"></script>
+        <script src="src/utils/jquery-3.7.1.min.js"></script>
+
+        <meta
+            name="description"
+            content="ADHD To-Do Lifehacking Suite"
+        />
+    
+        <title>Algae Rhythm</title>
 
     </head>
     <body>
-    Yo
+
+        <div class="content-parent list-area">
+            <div id="master-list">
+                <h1>Master List</h1>
+                <p class="list-description">
+                    This is your dumping grounds for all tasks, huge and miniscule. This list should be literally every task in your life, if you wish to take it as far as it is meant to go.
+                </p>
+
+                <div class="list-button-container">
+                    <button class="list-adder" data-listname="master-list" type="button">+</button>
+                </div>
+
+                <div class="tasklist" data-listid="master-list">
+                    <span draggable="true" class="task">
+                        <input type="checkbox" />
+                        <input type="text" value="Master List Item 1" />
+                        <span class="deleter">x</span>
+                        <!-- <textarea></textarea> -->
+                    </span>
+                    <!-- <span class="task">
+                        <input type="checkbox" />
+                        <input type="text" />
+                    </span> -->
+                </div>
+
+            </div>
+            <div class="primary-list" id="life-list">
+                <h1>Life List</h1>
+                <p class="list-description">
+                    Lorem ipsum dolor selet. Ego non sum laetus. Ego sum tristis. Vita malor est. Lorem ipsum dolor selet. Ego non sum laetus. Ego sum tristis. Vita malor est.
+                </p>
+
+                <div class="list-button-container">
+                    <button class="list-adder" data-listname="life-list" type="button">+</button>
+                </div>
+
+                <div class="tasklist" data-listid="life-list">
+                    <span draggable="true" class="task">
+                        <input type="checkbox"/>
+                        <input type="text" value="Life List Item 1" />
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-parent main-timeline">
+            <div id="main-timeline"><div id="progenitor" class="timetick"></div></div>
+        </div>
+
+        <script type="text/javascript" src="src/models/Timeline.js"></script>
+        <script type="text/javascript" src="src/services/logger.js"></script>
+        <script type="text/javascript" src="src/app.js"></script>
     </body>
 </html>
